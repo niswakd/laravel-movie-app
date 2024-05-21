@@ -39,22 +39,23 @@
                                     </div>
                                 </div>
 
+                                @foreach ($genres as $genre)
                                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
                                     <div class="col-span-3 flex items-center">
                                         <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
                                             <p class="text-sm font-medium text-black dark:text-white">
-                                                1
+                                                {{ $genre ['id'] }}
                                             </p>
                                         </div>
                                     </div>
                                     <div class="col-span-1 items-center sm:flex">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                            Jojo's Bizarre Adventure
+                                            {{ $genre ['name'] }}
                                         </p>
                                     </div>
                                     <div class="col-span-3 flex items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                            JoJo's Bizarre Adventure is an anime series adapted from a manga by Hirohiko Araki. The anime is known for its unique plot, iconic characters, and distinctive art style. The story follows the adventures of the Joestar family, each member of which has a different superpower known as a "Stand."
+                                            {{ $genre ['description'] }}
                                         </p>
                                     </div>
                                     <div class="col-span-1 flex items-center">
@@ -64,108 +65,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                                    <div class="col-span-3 flex items-center">
-                                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                                            <p class="text-sm font-medium text-black dark:text-white">
-                                                2
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-span-1 items-center sm:flex">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            Noragami
-                                        </p>
-                                    </div>
-                                    <div class="col-span-3 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            Noragami is an anime adaptation of a manga by Adachitoka. The anime tells the story of Yato, a small god who aspires to become a famous god by having millions of followers. However, for now, he only does odd jobs to raise money and promote himself.
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <div class="flex items-center space-x-1">
-                                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                                    <div class="col-span-3 flex items-center">
-                                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                                            <p class="text-sm font-medium text-black dark:text-white">
-                                                3
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-span-1 items-center sm:flex">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            Wind Breaker
-                                        </p>
-                                    </div>
-                                    <div class="col-span-3 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            Wind Breaker is an anime that centers on Haruka Sakura, a high school student known for her bravery and exceptional skills in cycling. As the leader of her school's cycling team, Haruka is determined to face challenges and overcome various obstacles that come her way.
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <div class="flex items-center space-x-1">
-                                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                                    <div class="col-span-3 flex items-center">
-                                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                                            <p class="text-sm font-medium text-black dark:text-white">
-                                                4
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-span-1 items-center sm:flex">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            Frieren: Beyond Journey's End
-                                        </p>
-                                    </div>
-                                    <div class="col-span-3 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            Frieren: Beyond Journey's End is an anime adaptation of the manga by Kanehito Yamada and Tsukasa Abe. The story follows Frieren, an elven wizard who was part of a group of heroes who defeated the Demon King and brought peace to the world. However, since elves have a very long lifespan, Frieren sees his human friends begin to age and eventually die one by one.
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <div class="flex items-center space-x-1">
-                                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                                    <div class="col-span-3 flex items-center">
-                                        <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
-                                            <p class="text-sm font-medium text-black dark:text-white">
-                                                5
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-span-1 items-center sm:flex">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            Solo Leveling
-                                        </p>
-                                    </div>
-                                    <div class="col-span-3 flex items-center">
-                                        <p class="text-sm font-medium text-black dark:text-white">
-                                            Solo Leveling is an anime adaptation of the popular web novel and manhwa by Chugong. The story focuses on Sung Jin-Woo, a lowest-ranked hunter known as "the weakest hunter in the world." Despite being at the lowest level and often risking losing his life in battles against monsters, Jin-Woo remains persistent and never gives up.
-                                        </p>
-                                    </div>
-                                    <div class="col-span-1 flex items-center">
-                                        <div class="flex items-center space-x-1">
-                                            <a href="" class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20">Edit</a>
-                                            <a href="" class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-800 ring-1 ring-inset ring-red-600/20">Delete</a>
-                                        </div>
-                                    </div>
-                                </div>
+                                @endforeach
                             </div>
-
                             <!-- ====== Table Two End -->
                         </div>
                         <!-- ====== Table Section End -->

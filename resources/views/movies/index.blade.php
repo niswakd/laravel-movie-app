@@ -25,10 +25,10 @@
                             <!-- ====== Table Two Start -->
                             <div class="rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark">
                                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                                    <div class="col-span-3 flex items-center">
+                                    <div class="col-span-2 flex items-center">
                                         <p class="font-medium">Anime Name</p>
                                     </div>
-                                    <div class="col-span-1 items-center sm:flex">
+                                    <div class="col-span-2 items-center sm:flex">
                                         <p class="font-medium">Genre</p>
                                     </div>
                                     <div class="col-span-3 flex items-center">
@@ -41,24 +41,24 @@
 
                                 @foreach ($movies as $movie)
                                 <div class="grid grid-cols-6 border-t border-stroke px-4 py-4.5 dark:border-strokedark sm:grid-cols-8 md:px-6 2xl:px-7.5">
-                                    <div class="col-span-3 flex items-center">
+                                    <div class="col-span-2 flex items-center">
                                         <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
                                             <div class="w-12 rounded-md">
-                                                <img src="src/images/movie/{{ $movie ['poster'] }}" alt="Product" />
+                                                <img src="src/images/movie/{{ $movie->poster }}" alt="Product" />
                                             </div>
                                             <p class="text-sm font-medium text-black dark:text-white">
-                                                {{ $movie ['title'] }}
+                                                {{ $movie->title }}
                                             </p>
                                         </div>
                                     </div>
-                                    <div class="col-span-1 items-center sm:flex">
+                                    <div class="col-span-2 items-center sm:flex">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                            {{ $movie ['genre'] }}
+                                            {{ $movie->genre->name }}
                                         </p>
                                     </div>
                                     <div class="col-span-3 flex items-center">
                                         <p class="text-sm font-medium text-black dark:text-white">
-                                            {{ $movie ['synopsis'] }}
+                                            {{ $movie->synopsis }}
                                         </p>
                                     </div>
                                     <div class="col-span-1 flex items-center">

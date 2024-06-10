@@ -33,5 +33,19 @@ class MovieSeeder extends Seeder
             'poster' => 'movie-03.jpg',
             'synopsis' => 'Haruka Sakura wants nothing to do with weaklings—hes only interested in the strongest of the strong.',
         ]);
+
+        Movie::create([
+            'title' => 'Frieren',
+            'genre_id' => '4',
+            'poster' => 'movie-05.jpg',
+            'synopsis' => 'Frieren is a......',
+        ]);
+
+        Movie::create([
+            'title' => 'Solo Leveling',
+            'genre_id' => '5',
+            'poster' => 'movie-06.jpg',
+            'synopsis' => 'Solo Leveling is a.....',
+        ]);
     }
 }

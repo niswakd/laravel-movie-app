@@ -61,7 +61,6 @@
                         @csrf
 
                         <div class="p-6.5">
-                        <div class="p-6.5">
                             <div class="mb-4.5">
                                 <label class="mb-3 block text-sm font-medium text-black dark:text-white"> Name <span class="text-meta-1">*</span> </label>
                                 <input
